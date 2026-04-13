@@ -1,6 +1,6 @@
 cask "macrelay" do
-  version "1.1.3"
-  sha256 "a63679e1ac35dbbc2ac519e15af958621232f78f3d18416240ad68a3afc48ed0"
+  version "1.1.4"
+  sha256 "99f885d5cafbd0edd7fb4e4e1c89f10c3324ef25a4399ad2220d95679850d03b"
 
   url "https://github.com/drbarq/macrelay/releases/download/v#{version}/MacRelay.zip"
   name "MacRelay"
@@ -12,7 +12,6 @@ cask "macrelay" do
   app "MacRelay.app"
 
   postflight do
-    system "xattr", "-cr", "#{appdir}/MacRelay.app"
     system "open", "#{appdir}/MacRelay.app"
   end
 
