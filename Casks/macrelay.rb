@@ -1,6 +1,6 @@
 cask "macrelay" do
-  version "1.1.1"
-  sha256 "c8e07889455423b522a44579dc8d02ab2f7ef964e0c806834ca2beb2485c2cb8"
+  version "1.1.2"
+  sha256 "a5353dfcdb091f58d8434d6532c3acc496ea3f9a15de5f8e25de0d699200518c"
 
   url "https://github.com/drbarq/macrelay/releases/download/v#{version}/MacRelay.zip"
   name "MacRelay"
@@ -12,9 +12,7 @@ cask "macrelay" do
   app "MacRelay.app"
 
   postflight do
-    # Strip quarantine flag so Gatekeeper doesn't block unsigned app
     system "xattr", "-cr", "#{appdir}/MacRelay.app"
-    # Launch the app so the menu bar icon appears
     system "open", "#{appdir}/MacRelay.app"
   end
 
