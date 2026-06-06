@@ -1,6 +1,6 @@
 cask "macrelay" do
-  version "1.2.6"
-  sha256 "935289f155a8c96f62505dd9e613bb5a46857934ec0bccf707781ea23fab77db"
+  version "1.3.0"
+  sha256 "e44e34dd7504d659925b6ec8842151f2d7cf7f4635e1fde008ae8ee266d22b37"
 
   url "https://github.com/drbarq/macrelay/releases/download/v#{version}/MacRelay.zip"
   name "MacRelay"
